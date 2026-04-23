@@ -1,138 +1,178 @@
-
-
-
 :root {
-    --base-color:#f3b1df;
-    --text-color:#db5b5b;
-    --primary-color:#e29762;
-    --secondary-color:rgb(0, 234, 255);
-    --color-1:rgb(159, 253, 186);
-    --color-2:orange;
-    --color-3:pink;
+  --base-color: #f3b1df;
+  --text-color: #db5b5b;
+  --primary-color: #e29762;
+  --secondary-color: rgb(0, 234, 255);
+  --color-1: rgb(159, 253, 186);
+  --color-2: orange;
+  --color-3: pink;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1, h2, h3{
-    font-family: 'Bitter', Times, serif;
-    
+h1,
+h2,
+h3 {
+  font-family: "Bitter", Times, serif;
 }
 html {
-    font-family: Roboto, sans-serif;
-    color: var(--text-color);
+  font-family: Roboto, sans-serif;
+  color: var(--text-color);
 }
 
 body {
-    padding: em;
-    background-color: var(--base-color);
+  padding: em;
+  background-color: var(--base-color);
 }
 
-
 a:link {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 nav {
-    margin: 1em auto 3em auto;
-    width: min(1000px, 100%);
+  margin: 1em auto 3em auto;
+  width: min(1000px, 100%);
 }
 
-nav ul{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    gap: 2em;
-    color:var(--text-color)
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 2em;
+  color: var(--text-color);
 }
 
 nav ul:first-child {
-    margin-right: auto;
-    font-family: Roboto;
-    font-weight: bold;
+  margin-right: auto;
+  font-family: Roboto;
+  font-weight: bold;
 }
 
-nav a{
-    text-decoration: none;
-    color: var(I--text-color);
-
+nav a {
+  text-decoration: none;
+  color: var(I--text-color);
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
- a:link {
-    text-decoration: none;
-    color: white;
+a:link {
+  text-decoration: none;
+  color: white;
 }
 
-header, section {
-    margin: 2em auto;
-    width: min(75em, 100%);
-    padding: min(2em, 15%);
-    background-color: var(--color-1);
-    border-radius: 1em;
-    
+header,
+section {
+  margin: 2em auto;
+  width: min(75em, 100%);
+  padding: min(2em, 15%);
+  background-color: var(--color-1);
+  border-radius: 1em;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3em;
 }
 
 header img {
-    max-width: 100;
-    border-radius: 1em;
-    object-fit: cover;
-    object-position: bottom;
+  max-width: 100;
+  border-radius: 1em;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .text-container {
-    flex: 0 1 34em;
+  flex: 0 1 34em;
 }
 
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .text-container p {
-    margin: .75em 0 1em 0;
+  margin: 0.75em 0 1em 0;
+}
+
+.javascript-list {
+  text-decoration: none;
+  color: white;
+}
+
+.todo {
+  padding: 1.5em;
+  border-radius: 0.5em;
+  background-color: darkred;
+  gap: 40px;
+  opacity: 0;
+  flex: display;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.todo.show {
+  opacity: 1;
 }
 
 .cta-button {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: .75em 1.25em;
-    border-radius: .5em;
-    font-weight: 600;
-    background-color: var(--primary-color)
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 0.75em 1.25em;
+  border-radius: 0.5em;
+  font-weight: 600;
+  background-color: var(--primary-color);
 }
 
 .secondary {
-    background-color: rgb(159, 159, 255);
+  background-color: rgb(159, 159, 255);
 }
 
 section {
-    padding: 3em min(2em, 15%);
-    background-color: var(--color-2);
-    text-align: center;
+  padding: 3em min(2em, 15%);
+  background-color: var(--color-2);
+  text-align: center;
 }
 
-h2{
-    font-size: 2rem;
-    color: white;
+h2 {
+  font-size: 2rem;
+  color: white;
 }
 
 section p {
-    margin-top: 1em;
-    font-size: 1.25rem;
-    color: var(--text-color)
+  margin-top: 1em;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
 
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 988px) {
+  header {
+    text-align: center;
+  }
+
+  header .text-container {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  nav li {
+    display: none;
+  }
+
+  nav li:first-child,
+  nav li:last-child {
+    display: block;
+  }
 }
