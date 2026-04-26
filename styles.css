@@ -1,7 +1,7 @@
 :root {
-  --base-color: #f3b1df;
-  --text-color: #db5b5b;
-  --primary-color: #e29762;
+  --base-color: #616161;
+  --text-color: #828282;
+  --primary-color: #797979;
   --secondary-color: rgb(0, 234, 255);
   --color-1: rgb(159, 253, 186);
   --color-2: orange;
@@ -101,23 +101,17 @@ h1 {
   margin: 0.75em 0 1em 0;
 }
 
-.javascript-list {
-  text-decoration: none;
-  color: white;
-}
-
-.todo {
-  padding: 1.5em;
+.hidden {
+  padding: 1em;
   border-radius: 0.5em;
-  background-color: darkred;
-  gap: 40px;
+  background-color: var(--color-1);
+  gap: 20em;
   opacity: 0;
-  flex: display;
-  flex-direction: row;
-  text-decoration: none;
+  list-style-type: none;
+  transition: all 1s;
 }
 
-.todo.show {
+.show {
   opacity: 1;
 }
 
@@ -175,4 +169,16 @@ footer a:hover {
   nav li:last-child {
     display: block;
   }
+}
+
+.hidden:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.hidden:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.hidden:nth-child(4) {
+  transition-delay: 600ms;
 }
