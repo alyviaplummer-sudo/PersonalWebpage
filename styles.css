@@ -31,6 +31,7 @@ body {
 header {
   position: sticky;
   top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,14 +92,15 @@ a:link {
 }
 
 .section_one {
-  margin: 2em auto;
-  width: min(75em, 100%);
+  width: min(100, 100%);
   display: flex;
-  justify-content: left;
-  background-color: rgb(14, 14, 14);
-  padding: 2em;
+  justify-content: center;
+  background: linear-gradient(rgb(34, 22, 3), rgb(0, 0, 0));
+  padding-top: 7em;
+  padding-bottom: 2em;
   gap: 5em;
   flex-shrink: 1;
+  border:;
 }
 
 .section_two {
@@ -115,8 +117,8 @@ a:link {
 }
 
 .section_two:hover {
-  transform: translateY(-4px) translateX(2px);
-  filter: brightness 1.2;
+  transform: translateY(-4px);
+  filter: brightness(1.2);
 }
 
 .section_three {
@@ -168,7 +170,21 @@ a:link {
 .mephoto {
   border-radius: 60%;
   border: 1px solid gold;
-  transition: transform 0.2 ease;
+  transition: transform 0.2s ease;
+  filter: brightness(1.2);
+}
+
+.tech-stack {
+  display: flex;
+
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tech-stack h2 {
+}
+
+.tech-stack img {
 }
 
 .mephoto:hover {
