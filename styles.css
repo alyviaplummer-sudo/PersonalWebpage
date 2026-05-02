@@ -94,7 +94,7 @@ a:link {
 .section_one {
   width: min(100, 100%);
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
   background: linear-gradient(rgb(34, 22, 3), rgb(0, 0, 0));
   padding-top: 7em;
@@ -149,8 +149,6 @@ a:link {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 1em;
-  
-  
 }
 
 .skills:hover {
@@ -200,7 +198,6 @@ h1 {
   background: linear-gradient(rgb(34, 22, 3), rgb(0, 0, 0));
   justify-content: space-between;
   border-right: none;
-  
 }
 
 .copyright {
@@ -222,19 +219,15 @@ h1 {
   margin: 2em;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .copyright {
-    height: 100px;
-    
+  height: 100px;
 }
 
 h4 {
-    font-size: 12px;
+  font-size: 12px;
 }
-
-
 
 .contact-inputs {
   height: 50px;
@@ -247,32 +240,27 @@ h4 {
 }
 
 .footerbuttons {
-  
-    object-fit: cover;
-    border: 2px solid blue;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(69, 61, 19);
-    border-radius: 30px;
-    padding: 1em;
-    border: 1px solid gold;
-    cursor: pointer;
-
+  object-fit: cover;
+  border: 2px solid blue;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(69, 61, 19);
+  border-radius: 30px;
+  padding: 1em;
+  border: 1px solid gold;
+  cursor: pointer;
 }
 
 .footerbuttons:hover {
-   filter: brightness(1.2);
+  filter: brightness(1.2);
   box-shadow: 0 0 15px rgba(255, 132, 0, 0.6);
   transform: translateY(-4px);
-  
-
 }
 
 .footerbuttons img {
-    height: 75px;
-    width: 75px;
-    object-fit: cover;
-    
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
 }
 .hidden {
   padding: 1em;
@@ -308,25 +296,23 @@ h4 {
     justify-content: center;
     align-items: center;
     background-color: rgb(14, 14, 14);
-    padding:3em;
+    padding: 3em;
     gap: 5em;
     flex-shrink: 1;
   }
 
   .section_two {
     width: min(22em, 100%);
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-
   }
 
   .skills {
     flex-wrap: wrap;
   }
-  
- 
+
   h1 {
     width: 400px;
     margin: 0 auto;
@@ -337,30 +323,21 @@ h4 {
   h2 {
   }
 
-  .footerbuttons img{
-    height:30px;
+  .footerbuttons img {
+    height: 30px;
     width: 30px;
-    
   }
 
-  
-  
   .foot_div_02 {
-  display: flex;
-  gap: .5em;
-  margin: 1em;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  
-  
+    display: flex;
+    gap: 0.5em;
+    margin: 1em;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
 
-}
-
-.footer {
+  .footer {
     height: auto;
-}
-
-
-
+  }
 }
