@@ -4,8 +4,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 gsap.to(".mephoto", {
   scrollTrigger: ".mephoto",
+  force3D:true, 
   rotation: 360,
   duration: 3,
+  ease: "power1.out",
 });
 
 let split = SplitText.create(".headerheader", {
