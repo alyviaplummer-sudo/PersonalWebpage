@@ -276,7 +276,7 @@ h4 {
   opacity: 1;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .nav_links {
     display: none;
   }
