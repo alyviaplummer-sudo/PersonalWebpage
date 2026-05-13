@@ -289,8 +289,6 @@ h4 {
     list-style-type: none;
   }
   .section_one {
-    margin: 2em auto;
-    width: min(75em, 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,6 +297,14 @@ h4 {
     padding: 3em;
     gap: 5em;
     flex-shrink: 1;
+  }
+
+  .headertext {
+    margin: 1em;
+  }
+
+  .headertext2 {
+    margin: 1em;
   }
 
   .section_two {
